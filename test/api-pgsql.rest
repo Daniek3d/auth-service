@@ -1,0 +1,23 @@
+GET http://localhost:3010/api/v1/usuarios
+    ?page=2
+    &pageSize=10
+    
+Content-Type: application/xml
+Authorization: token xxx
+
+
+###
+POST http://localhost:3010/api/usuarios    
+content-type: application/json
+
+{
+    "nombre": "sample"
+}
+###
+GET  http://localhost:3010/api/usuarios/123 HTTP/1.1
+
+###
+PUT http://localhost:3010/api/usuarios/123 HTTP/1.1
+
+###
+DELETE  http://localhost:3010/api/usuarios/123 HTTP/1.1
